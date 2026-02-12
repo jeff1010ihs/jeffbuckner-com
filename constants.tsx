@@ -6,8 +6,7 @@ import {
   LayoutDashboard, 
   Compass, 
   Mic2, 
-  HeartHandshake, 
-  Map 
+  HeartHandshake 
 } from 'lucide-react';
 import { Service } from './types';
 
@@ -65,14 +64,5 @@ export const SERVICES: Service[] = [
     description: "Confidential pastoral care for teams within secular organizations. Providing support and moral clarity during seasons of stress, transition, or ethical strain.",
     scripture: "Who comforts us in all our affliction, so that we may be able to comfort those who are in any affliction.",
     reference: "2 Corinthians 1:4 (ESV)"
-  },
-  {
-    id: 7,
-    title: "Calling & Vocation",
-    tagline: "Aligning ambition with a coherent life vision.",
-    icon: <Map className="w-6 h-6" />,
-    description: "Helping men discern their calling with honesty. Ideal for those who sense they are meant to build, lead, or create, but want to do so in alignment with their convictions.",
-    scripture: "Whatever you do, work heartily, as for the Lord and not for men.",
-    reference: "Colossians 3:23 (ESV)"
   }
 ];

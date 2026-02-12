@@ -9,7 +9,7 @@ export const ServicesGrid: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="mb-20 md:flex justify-between items-end">
           <div className="max-w-xl">
-            <span className="text-[10px] font-black text-brand-navy uppercase tracking-[0.3em] mb-4 block">Our Offering</span>
+            <span className="text-[10px] font-black text-brand-navy uppercase tracking-[0.3em] mb-4 block">Offering</span>
             <h2 className="text-4xl font-bold tracking-tight text-slate-900 mb-4 uppercase">Professional Services</h2>
             <p className="text-slate-500 text-lg font-light leading-relaxed">Integrated development for individuals, churches, and secular organizations that value well-being and moral clarity.</p>
           </div>
