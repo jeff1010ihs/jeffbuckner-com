@@ -4,19 +4,20 @@ import { ArrowRight } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
-    <header className="relative pt-48 pb-24 overflow-hidden border-b border-slate-100">
+    <header className="relative pt-24 pb-24 overflow-hidden border-b border-slate-100">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
         <div className="max-w-4xl">
           <div className="inline-flex items-center space-x-2 bg-slate-100 px-3 py-1 mb-8">
             <span className="w-1.5 h-1.5 bg-brand-red rounded-full animate-pulse"></span>
-            <span className="text-[10px] uppercase tracking-[0.2em] font-black text-slate-500">Forming Men of Conviction</span>
+            <span className="text-[10px] uppercase tracking-[0.2em] font-black text-slate-500">Christian Life Coaching and Leadership Development for Men</span>
           </div>
-          <h1 className="text-6xl md:text-[6rem] font-bold text-slate-900 tracking-tighter leading-[0.9] mb-10">
-            Leadership isn't performance.<br />
-            <span className="text-brand-navy italic font-serif lowercase">It is character.</span>
+          <h1 className="text-[2.5rem] md:text-[4rem] font-bold text-slate-900 tracking-tighter leading-[1.15] mb-10">
+            Stand firm.<br />
+            Be courageous.<br />
+            <span className="text-brand-rust italic font-serif">Live for His glory.</span>
           </h1>
-          <p className="text-xl md:text-2xl text-slate-500 leading-relaxed max-w-2xl mb-12 font-light">
-            Intentional formation for men who want to move from passive participation to active ownership. Built for real life, grounded in truth.
+          <p className="text-xl md:text-2xl text-slate-500 leading-relaxed max-w-[59rem] mb-12 font-light">
+            Experience the joy, peace, and purpose of a life set apart for God. I coach and lead men to embrace the path of sanctification, moving from a mindset of duty into a vibrant, personal relationship with Jesus Christ. From the sanctity of your family to the challenges of your work and your role in the community, we will align every area of your life with the heart of Jesus and obedience to biblical truth.
           </p>
           <div className="flex flex-col sm:flex-row gap-6">
             <a href="#services" className="bg-brand-navy text-white px-10 py-5 font-bold uppercase tracking-[0.15em] text-xs flex items-center justify-center hover:bg-slate-800 transition-all group shadow-xl shadow-slate-200 relative overflow-hidden">

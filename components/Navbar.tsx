@@ -23,13 +23,8 @@ export const Navbar: React.FC = () => {
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex justify-between items-center">
-        <a href="#" className="flex items-center space-x-2 group">
-          <div className="w-8 h-8 bg-brand-navy rounded-sm flex items-center justify-center group-hover:bg-brand-rust transition-colors duration-500">
-            <span className="text-white font-serif italic text-xl">L</span>
-          </div>
-          <span className="text-lg font-bold tracking-tight uppercase">
-            Leadership <span className="text-slate-400 font-light">& Formation</span>
-          </span>
+        <a href="#" className="flex items-center group">
+          <img src="/Jeff_Buckner-Logo.png" alt="Leadership & Formation" className="w-[220px] h-auto object-contain" />
         </a>
         
         <div className="hidden md:flex space-x-10 items-center">

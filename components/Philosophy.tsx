@@ -35,8 +35,8 @@ export const Philosophy: React.FC = () => {
           <div className="relative">
             <div className="aspect-[4/5] bg-slate-100 relative group overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop" 
-                alt="Leadership" 
+                src="/Jeff%20Buckner%20w%20hat.jpg" 
+                alt="Jeff Buckner" 
                 className="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-brand-navy/10 mix-blend-multiply"></div>
