@@ -24,12 +24,12 @@ export const Hero: React.FC<HeroProps> = ({ onScheduleConsultation }) => {
           </p>
           <div className="flex flex-col sm:flex-row gap-6">
             {onScheduleConsultation ? (
-              <button type="button" onClick={onScheduleConsultation} className="bg-brand-navy text-white px-10 py-5 font-bold uppercase tracking-[0.15em] text-xs flex items-center justify-center hover:bg-slate-800 transition-all group shadow-xl shadow-slate-200 relative overflow-hidden">
+              <button type="button" onClick={onScheduleConsultation} className="bg-brand-navy text-white px-10 py-5 font-bold uppercase tracking-[0.15em] text-xs flex items-center justify-center hover:bg-brand-rust transition-all group shadow-xl shadow-slate-200 relative overflow-hidden">
                 <span className="absolute top-0 left-0 w-full h-[2px] bg-brand-rust opacity-50"></span>
                 Schedule Consultation
               </button>
             ) : (
-              <a href="#services" className="bg-brand-navy text-white px-10 py-5 font-bold uppercase tracking-[0.15em] text-xs flex items-center justify-center hover:bg-slate-800 transition-all group shadow-xl shadow-slate-200 relative overflow-hidden">
+              <a href="#services" className="bg-brand-navy text-white px-10 py-5 font-bold uppercase tracking-[0.15em] text-xs flex items-center justify-center hover:bg-brand-rust transition-all group shadow-xl shadow-slate-200 relative overflow-hidden">
                 <span className="absolute top-0 left-0 w-full h-[2px] bg-brand-rust opacity-50"></span>
                 Schedule Consultation
               </a>

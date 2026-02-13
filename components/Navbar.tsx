@@ -2,9 +2,18 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
-export const Navbar: React.FC = () => {
+interface NavbarProps {
+  onScheduleConsultation?: () => void;
+}
+
+export const Navbar: React.FC<NavbarProps> = ({ onScheduleConsultation }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const goToConsultation = () => {
+    setMobileMenuOpen(false);
+    onScheduleConsultation?.();
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,9 +42,15 @@ export const Navbar: React.FC = () => {
               {link.name}
             </a>
           ))}
-          <button className="bg-brand-navy text-white px-6 py-2.5 text-xs font-bold hover:bg-brand-rust transition-all uppercase tracking-widest border border-brand-navy">
-            Consultation
-          </button>
+          {onScheduleConsultation ? (
+            <button type="button" onClick={onScheduleConsultation} className="bg-brand-navy text-white px-6 py-2.5 text-xs font-bold hover:bg-brand-rust transition-all uppercase tracking-widest border border-brand-navy">
+              Consultation
+            </button>
+          ) : (
+            <a href="#consultation" className="bg-brand-navy text-white px-6 py-2.5 text-xs font-bold hover:bg-brand-rust transition-all uppercase tracking-widest border border-brand-navy inline-block">
+              Consultation
+            </a>
+          )}
         </div>
 
         <button className="md:hidden text-slate-900" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -49,20 +64,20 @@ export const Navbar: React.FC = () => {
           <div className="flex justify-end">
             <button onClick={() => setMobileMenuOpen(false)}><X size={32} /></button>
           </div>
-          <div className="flex flex-col space-y-6">
+          <div className="flex flex-col space-y-5">
             {navLinks.map((link) => (
               <a 
                 key={link.name} 
                 href={link.href} 
                 onClick={() => setMobileMenuOpen(false)} 
-                className="text-4xl font-bold tracking-tighter"
+                className="text-2xl font-bold tracking-tighter"
               >
                 {link.name}
               </a>
             ))}
           </div>
-          <button className="bg-brand-navy text-white p-6 font-bold text-xl uppercase tracking-widest mt-auto">
-            Book a Call
+          <button type="button" onClick={goToConsultation} className="bg-brand-navy text-white p-5 font-bold text-base uppercase tracking-widest mt-auto">
+            Schedule Consultation
           </button>
         </div>
       )}

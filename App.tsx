@@ -13,7 +13,7 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
+      <Navbar onScheduleConsultation={() => setPage('consultation')} />
       <main className="flex-grow">
         {page === 'home' ? (
           <>

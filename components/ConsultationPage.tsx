@@ -7,6 +7,10 @@ interface ConsultationPageProps {
 
 export const ConsultationPage: React.FC<ConsultationPageProps> = ({ onBack }) => {
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     // Dynamically load the Calendly script
     const script = document.createElement('script');
     script.src = "https://assets.calendly.com/assets/external/widget.js";
