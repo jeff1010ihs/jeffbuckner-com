@@ -1,5 +1,5 @@
-
 import React from 'react';
+import { PrimaryButton, SecondaryButton } from './Button';
 
 interface HeroProps {
   onScheduleConsultation?: () => void;
@@ -23,20 +23,16 @@ export const Hero: React.FC<HeroProps> = ({ onScheduleConsultation }) => {
             Experience the joy, peace, and purpose of a life set apart for God. I coach and lead men to embrace the path of sanctification, moving from a mindset of duty into a vibrant, personal relationship with Jesus Christ. From the sanctity of your family to the challenges of your work and your role in the community, we will align every area of your life with the heart of Jesus and obedience to biblical truth.
           </p>
           <div className="flex flex-col sm:flex-row gap-6">
-            {onScheduleConsultation ? (
-              <button type="button" onClick={onScheduleConsultation} className="bg-brand-navy text-white px-10 py-5 font-bold uppercase tracking-[0.15em] text-sm leading-5 flex items-center justify-center hover:bg-brand-rust transition-all group shadow-xl shadow-slate-200 relative overflow-hidden">
-                <span className="absolute top-0 left-0 w-full h-[2px] bg-brand-rust opacity-50"></span>
-                Schedule Consultation
-              </button>
-            ) : (
-              <a href="#services" className="bg-brand-navy text-white px-10 py-5 font-bold uppercase tracking-[0.15em] text-sm leading-5 flex items-center justify-center hover:bg-brand-rust transition-all group shadow-xl shadow-slate-200 relative overflow-hidden">
-                <span className="absolute top-0 left-0 w-full h-[2px] bg-brand-rust opacity-50"></span>
-                Schedule Consultation
-              </a>
-            )}
-            <a href="#philosophy" className="border border-slate-200 bg-white px-10 py-5 font-bold uppercase tracking-[0.15em] text-sm leading-5 hover:bg-slate-50 transition-all text-slate-600 flex items-center justify-center">
+            <PrimaryButton
+              href={onScheduleConsultation ? undefined : '#services'}
+              onClick={onScheduleConsultation}
+              accentLine
+            >
+              Schedule Consultation
+            </PrimaryButton>
+            <SecondaryButton href="#philosophy">
               Scholarship Info
-            </a>
+            </SecondaryButton>
           </div>
         </div>
       </div>

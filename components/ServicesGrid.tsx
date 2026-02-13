@@ -1,9 +1,13 @@
-
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { SERVICES } from '../constants';
+import { PrimaryButton } from './Button';
 
-export const ServicesGrid: React.FC = () => {
+interface ServicesGridProps {
+  onScheduleConsultation?: () => void;
+}
+
+export const ServicesGrid: React.FC<ServicesGridProps> = ({ onScheduleConsultation }) => {
   return (
     <section id="services" className="py-24 bg-white border-y border-slate-100">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
@@ -52,10 +56,14 @@ export const ServicesGrid: React.FC = () => {
                 Every significant change starts with a single conversation. Whether you're looking for personal coaching or organizational consulting, let's connect.
               </p>
             </div>
-            <button className="bg-white text-brand-navy px-10 py-5 font-bold uppercase tracking-[0.2em] text-sm hover:bg-brand-rust hover:text-white transition-all flex items-center relative z-10 shadow-2xl">
+            <PrimaryButton
+              variant="inverted"
+              onClick={onScheduleConsultation}
+              className="relative z-10 tracking-[0.2em]"
+            >
               Book Consultation
               <ArrowRight className="ml-3 w-4 h-4" />
-            </button>
+            </PrimaryButton>
             <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-64 h-64 bg-white/5 rounded-full blur-3xl group-hover:scale-110 transition-transform duration-700"></div>
           </div>
         </div>

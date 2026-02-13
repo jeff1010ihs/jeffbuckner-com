@@ -1,6 +1,6 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { PrimaryButton } from './Button';
 
 interface NavbarProps {
   currentPage?: 'home' | 'consultation';
@@ -70,15 +70,13 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage = 'home', onSchedule
               </a>
             )
           ))}
-          {onScheduleConsultation ? (
-            <button type="button" onClick={onScheduleConsultation} className="bg-brand-navy text-white px-6 py-2.5 text-sm font-bold hover:bg-brand-rust transition-all uppercase tracking-widest border border-brand-navy">
-              Consultation
-            </button>
-          ) : (
-            <a href="#consultation" className="bg-brand-navy text-white px-6 py-2.5 text-sm font-bold hover:bg-brand-rust transition-all uppercase tracking-widest border border-brand-navy inline-block">
-              Consultation
-            </a>
-          )}
+          <PrimaryButton
+            size="compact"
+            href={onScheduleConsultation ? undefined : '#consultation'}
+            onClick={onScheduleConsultation}
+          >
+            Consultation
+          </PrimaryButton>
         </div>
 
         <button className="md:hidden text-slate-900" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -115,9 +113,9 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage = 'home', onSchedule
               )
             ))}
           </div>
-          <button type="button" onClick={goToConsultation} className="bg-brand-navy text-white p-5 font-bold text-base uppercase tracking-widest mt-auto hover:bg-brand-rust transition-all">
+          <PrimaryButton size="lg" onClick={goToConsultation} className="mt-auto">
             Schedule Consultation
-          </button>
+          </PrimaryButton>
         </div>
       )}
     </nav>

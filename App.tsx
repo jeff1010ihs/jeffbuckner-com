@@ -41,7 +41,7 @@ const App: React.FC = () => {
         {page === 'home' ? (
           <>
             <Hero onScheduleConsultation={() => setPage('consultation')} />
-            <ServicesGrid />
+            <ServicesGrid onScheduleConsultation={() => setPage('consultation')} />
             <Philosophy />
             <GeminiAdvisor />
             <StyleGuide />
