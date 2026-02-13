@@ -10,11 +10,11 @@ export const Hero: React.FC<HeroProps> = ({ onScheduleConsultation }) => {
     <header className="relative pt-20 pb-16 md:pt-24 md:pb-24 overflow-hidden border-b border-slate-100">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
         <div className="max-w-6xl">
-          <div className="inline-flex items-center space-x-2 bg-slate-100 px-3 py-1 mb-6">
-            <span className="w-1.5 h-1.5 bg-brand-red rounded-full animate-pulse"></span>
-            <span className="text-[10px] sm:text-[14px] uppercase tracking-[0.2em] font-black text-slate-700">Christian Life Coaching and Leadership Development for Men</span>
+          <div className="flex sm:inline-flex items-center justify-center sm:justify-start space-x-2 bg-slate-100 px-3 py-1 mt-6 mb-6">
+            <span className="hidden sm:block w-1.5 h-1.5 bg-brand-red rounded-full animate-pulse flex-shrink-0"></span>
+            <span className="text-[10px] sm:text-[14px] uppercase tracking-[0.2em] font-black text-slate-700 text-center sm:text-left">Christian Life Coaching and Leadership Development for Men</span>
           </div>
-          <h1 className="text-[2.5rem] md:text-[4rem] font-bold text-slate-900 tracking-tighter leading-[1.15] mb-6">
+          <h1 className="text-[2rem] md:text-[4rem] font-bold text-slate-900 tracking-tighter leading-[1.15] mb-6">
             Stand firm.<br />
             Be courageous.<br />
             <span className="text-brand-rust italic font-serif">Live for His glory.</span>
