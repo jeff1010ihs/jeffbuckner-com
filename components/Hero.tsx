@@ -21,7 +21,7 @@ export const Hero: React.FC<HeroProps> = ({ onScheduleConsultation }) => {
           </h1>
 
           <div className="mb-6 border-l-2 border-brand-rust/30 pl-8 max-w-4xl">
-            <p className="text-lg md:text-xl text-brand-navy/70 font-serif italic leading-relaxed mb-3">
+            <p className="text-base md:text-xl text-brand-navy/70 font-serif italic leading-relaxed mb-3">
               "Be watchful, stand firm in the faith, act like men, be strong."
             </p>
             <p className="text-[10px] font-black text-slate-700 uppercase tracking-[0.3em]">

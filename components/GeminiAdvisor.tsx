@@ -57,7 +57,7 @@ export const GeminiAdvisor: React.FC = () => {
               <span className="text-[10px] uppercase tracking-[0.2em] font-black text-slate-300">AI Site Chat</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">Seek Direct Wisdom</h2>
-            <p className="text-slate-400 text-lg leading-relaxed mb-8 max-w-lg">
+            <p className="text-slate-400 text-base md:text-lg leading-relaxed mb-8 max-w-lg">
               Interact with our AI Site Chat for immediate insights on leadership, spiritual maturity, and character building. Based on the philosophy of intentional growth.
             </p>
             <div className="flex items-center space-x-6 text-slate-700">

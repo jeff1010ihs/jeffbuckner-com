@@ -19,7 +19,7 @@ export const StyleGuide: React.FC = () => {
           <div className="max-w-2xl">
             <span className="text-[10px] font-black text-brand-navy uppercase tracking-[0.4em] mb-4 block">Design System v1.0</span>
             <h2 className="text-5xl font-bold tracking-tighter text-slate-900 uppercase">Visual Standards</h2>
-            <p className="mt-6 text-slate-700 font-serif italic text-xl leading-relaxed">
+            <p className="mt-6 text-slate-700 font-serif italic text-base md:text-xl leading-relaxed">
               "A balance between the rigid structure of responsibility and the organic warmth of human character."
             </p>
           </div>

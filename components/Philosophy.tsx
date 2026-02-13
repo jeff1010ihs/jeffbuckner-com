@@ -12,7 +12,7 @@ export const Philosophy: React.FC = () => {
               Moving Men from <br />
               <span className="text-brand-rust italic font-serif lowercase">Participation to ownership.</span>
             </h2>
-            <div className="space-y-6 text-slate-600 leading-relaxed text-lg font-light">
+            <div className="space-y-6 text-slate-600 leading-relaxed text-base md:text-lg font-light">
               <p>
                 In a world focused on efficiency and output, we prioritize the internal landscape of the leader. We believe that professional success without personal integrity is a house built on sand.
               </p>
@@ -42,7 +42,7 @@ export const Philosophy: React.FC = () => {
               <div className="absolute inset-0 bg-brand-navy/10 mix-blend-multiply"></div>
               <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-brand-rust p-8 hidden lg:flex flex-col justify-center shadow-2xl">
                 <span className="text-white text-5xl font-serif italic">"</span>
-                <p className="text-white text-lg font-serif italic leading-tight">Character is what you are in the dark.</p>
+                <p className="text-white text-base md:text-lg font-serif italic leading-tight">Character is what you are in the dark.</p>
                 <p className="text-white/40 text-[10px] uppercase font-black tracking-widest mt-4">Pillar of Integrity</p>
               </div>
             </div>

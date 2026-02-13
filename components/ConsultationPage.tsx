@@ -47,7 +47,7 @@ export const ConsultationPage: React.FC<ConsultationPageProps> = ({ onBack }) =>
               Schedule Free 30-minute Call
             </h1>
             
-            <p className="text-xl text-slate-700 leading-relaxed font-light mb-12">
+            <p className="text-base md:text-xl text-slate-700 leading-relaxed font-light mb-12">
               Please select a convenient date and time from the calendar below. Alternatively, you are welcome to contact me directly via phone or chat.<br />
               You will receive a meeting invitation immediately after scheduling.
             </p>
