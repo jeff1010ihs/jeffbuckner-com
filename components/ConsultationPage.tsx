@@ -29,10 +29,10 @@ export const ConsultationPage: React.FC<ConsultationPageProps> = ({ onBack }) =>
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <button 
           onClick={onBack}
-          className="group flex items-center space-x-2 text-slate-400 hover:text-brand-navy transition-colors mb-12"
+          className="group flex items-center space-x-2 text-brand-rust hover:text-brand-navy transition-colors mb-12"
         >
           <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
-          <span className="text-[10px] sm:text-[14px] font-black uppercase tracking-widest">BACK TO HOME</span>
+          <span className="text-[9px] sm:text-[12px] font-black tracking-widest">Back to Home</span>
         </button>
 
         <div className="grid lg:grid-cols-2 gap-16 xl:gap-24">
