@@ -30,7 +30,7 @@ export const Hero: React.FC<HeroProps> = ({ onScheduleConsultation }) => {
           </div>
 
           <p className="text-base md:text-xl text-slate-700 leading-relaxed max-w-[59rem] mb-8 font-light">
-            Experience the joy, peace, and purpose of a life set apart for God. I coach and lead men to embrace the path of sanctification, moving from a mindset of duty into a vibrant, personal relationship with Jesus Christ. From the sanctity of your family to the challenges of your work and your role in the community, we will align every area of your life with the heart of Jesus and obedience to biblical truth.
+            Experience the joy, peace, and purpose of a life set apart for God. I coach and lead men and organizations to embrace the path of sanctification, moving from a mindset of duty into a vibrant, personal relationship with Jesus Christ. From the sanctity of your family to the challenges of your work and your role in the community, we will align every area of your life with the heart of Jesus and obedience to biblical truth.
           </p>
           <div className="flex flex-col sm:flex-row gap-6">
             <PrimaryButton
