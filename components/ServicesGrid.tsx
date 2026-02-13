@@ -52,7 +52,7 @@ export const ServicesGrid: React.FC = () => {
                 Every significant change starts with a single conversation. Whether you're looking for personal coaching or organizational consulting, let's connect.
               </p>
             </div>
-            <button className="bg-white text-brand-navy px-10 py-5 font-bold uppercase tracking-[0.2em] text-[10px] hover:bg-brand-rust hover:text-white transition-all flex items-center relative z-10 shadow-2xl">
+            <button className="bg-white text-brand-navy px-10 py-5 font-bold uppercase tracking-[0.2em] text-sm hover:bg-brand-rust hover:text-white transition-all flex items-center relative z-10 shadow-2xl">
               Book Consultation
               <ArrowRight className="ml-3 w-4 h-4" />
             </button>

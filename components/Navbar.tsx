@@ -71,11 +71,11 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage = 'home', onSchedule
             )
           ))}
           {onScheduleConsultation ? (
-            <button type="button" onClick={onScheduleConsultation} className="bg-brand-navy text-white px-6 py-2.5 text-xs font-bold hover:bg-brand-rust transition-all uppercase tracking-widest border border-brand-navy">
+            <button type="button" onClick={onScheduleConsultation} className="bg-brand-navy text-white px-6 py-2.5 text-sm font-bold hover:bg-brand-rust transition-all uppercase tracking-widest border border-brand-navy">
               Consultation
             </button>
           ) : (
-            <a href="#consultation" className="bg-brand-navy text-white px-6 py-2.5 text-xs font-bold hover:bg-brand-rust transition-all uppercase tracking-widest border border-brand-navy inline-block">
+            <a href="#consultation" className="bg-brand-navy text-white px-6 py-2.5 text-sm font-bold hover:bg-brand-rust transition-all uppercase tracking-widest border border-brand-navy inline-block">
               Consultation
             </a>
           )}
