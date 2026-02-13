@@ -22,11 +22,11 @@ export const ServicesGrid: React.FC<ServicesGridProps> = ({ onScheduleConsultati
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-12">
           {SERVICES.map((service, idx) => (
             <div key={service.id} className="group flex flex-col h-full">
-              <div className="mb-8 flex items-center justify-between border-b border-slate-100 pb-4">
-                <div className="p-4 bg-slate-50 text-slate-400 group-hover:text-brand-navy group-hover:bg-blue-50/50 transition-all duration-300">
+              <div className="mb-5 pb-3 flex items-center justify-between border-b border-slate-100">
+                <div className="p-4 bg-blue-50/50 text-brand-navy group-hover:bg-blue-50/50 transition-all duration-300">
                   {service.icon}
                 </div>
-                <span className="text-[10px] font-black text-slate-200 tracking-[0.3em] uppercase group-hover:text-brand-rust transition-colors">0{service.id}</span>
+                <span className="text-sm font-black text-brand-rust tracking-[0.3em] uppercase transition-colors">0{service.id}</span>
               </div>
               
               <h3 className="text-xl font-bold text-slate-900 mb-1 group-hover:text-brand-navy transition-colors duration-300">{service.title}</h3>
