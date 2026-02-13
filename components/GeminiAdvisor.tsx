@@ -60,7 +60,7 @@ export const GeminiAdvisor: React.FC = () => {
             <p className="text-slate-400 text-lg leading-relaxed mb-8 max-w-lg">
               Interact with our Formation Guide for immediate insights on leadership, spiritual maturity, and character building. Based on the philosophy of intentional growth.
             </p>
-            <div className="flex items-center space-x-6 text-slate-500">
+            <div className="flex items-center space-x-6 text-slate-700">
               <div className="flex items-center space-x-2">
                 <div className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></div>
                 <span className="text-xs font-bold uppercase tracking-widest text-white/50">Active Guidance</span>

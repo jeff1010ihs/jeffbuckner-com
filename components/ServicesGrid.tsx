@@ -11,7 +11,7 @@ export const ServicesGrid: React.FC = () => {
           <div className="max-w-xl">
             <span className="text-[10px] font-black text-brand-navy uppercase tracking-[0.3em] mb-4 block">Offering</span>
             <h2 className="text-4xl font-bold tracking-tight text-slate-900 mb-4 uppercase">Professional Services</h2>
-            <p className="text-slate-500 text-lg font-light leading-relaxed">Integrated development for individuals, churches, and secular organizations that value well-being and moral clarity.</p>
+            <p className="text-slate-700 text-lg font-light leading-relaxed">Integrated development for individuals, churches, and secular organizations that value well-being and moral clarity.</p>
           </div>
         </div>
 
@@ -29,7 +29,7 @@ export const ServicesGrid: React.FC = () => {
               <p className="text-[10px] font-bold text-brand-rust uppercase tracking-[0.2em] mb-5 italic font-serif">
                 {service.tagline}
               </p>
-              <p className="text-slate-500 leading-relaxed mb-8 text-sm font-light flex-grow">
+              <p className="text-slate-700 leading-relaxed mb-8 text-sm font-light flex-grow">
                 {service.description}
               </p>
 

@@ -40,14 +40,14 @@ export const ConsultationPage: React.FC<ConsultationPageProps> = ({ onBack }) =>
           <div>
             <div className="inline-flex items-center space-x-2 bg-slate-100 px-3 py-1 mb-8">
               <span className="w-1.5 h-1.5 bg-brand-rust rounded-full"></span>
-              <span className="text-[10px] sm:text-[14px] uppercase tracking-[0.2em] font-black text-slate-500">CONSULTATION</span>
+              <span className="text-[10px] sm:text-[14px] uppercase tracking-[0.2em] font-black text-slate-700">CONSULTATION</span>
             </div>
             
             <h1 className="text-4xl md:text-5xl font-normal text-brand-rust tracking-tighter leading-tight uppercase mb-8">
               Schedule Free 30-minute Call
             </h1>
             
-            <p className="text-xl text-slate-500 leading-relaxed font-light mb-12">
+            <p className="text-xl text-slate-700 leading-relaxed font-light mb-12">
               Please select a convenient date and time from the calendar below. Alternatively, you are welcome to contact me directly via phone or chat.<br />
               You will receive a meeting invitation immediately after scheduling.
             </p>
@@ -89,7 +89,7 @@ export const ConsultationPage: React.FC<ConsultationPageProps> = ({ onBack }) =>
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-900 uppercase text-xs tracking-wider mb-2">Strict Confidentiality</h4>
-                  <p className="text-sm text-slate-500 leading-relaxed">
+                  <p className="text-sm text-slate-700 leading-relaxed">
                     All discussions and correspondence are treated with care and always kept strictly confidential.
                   </p>
                 </div>
@@ -100,7 +100,7 @@ export const ConsultationPage: React.FC<ConsultationPageProps> = ({ onBack }) =>
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-900 uppercase text-xs tracking-wider mb-2">NEXT STEPS</h4>
-                  <p className="text-sm text-slate-500 leading-relaxed">
+                  <p className="text-sm text-slate-700 leading-relaxed">
                     Upon scheduling, you will receive a confidentiality agreement and a brief questionnaire. This process ensures our time is used effectively, allowing me to be fully prepared to address your specific goals during the call.
                   </p>
                 </div>

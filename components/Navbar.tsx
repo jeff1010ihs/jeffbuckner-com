@@ -60,12 +60,12 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage = 'home', onSchedule
                 key={link.name}
                 type="button"
                 onClick={() => onNavigateToSection(link.href)}
-                className="text-xs font-bold text-slate-500 hover:text-brand-navy transition-colors uppercase tracking-widest"
+                className="text-xs font-bold text-slate-700 hover:text-brand-navy transition-colors uppercase tracking-widest"
               >
                 {link.name}
               </button>
             ) : (
-              <a key={link.name} href={link.href} className="text-xs font-bold text-slate-500 hover:text-brand-navy transition-colors uppercase tracking-widest">
+              <a key={link.name} href={link.href} className="text-xs font-bold text-slate-700 hover:text-brand-navy transition-colors uppercase tracking-widest">
                 {link.name}
               </a>
             )
