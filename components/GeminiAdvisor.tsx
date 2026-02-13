@@ -54,11 +54,11 @@ export const GeminiAdvisor: React.FC = () => {
           <div>
             <div className="inline-flex items-center space-x-2 bg-white/10 px-3 py-1 mb-6 border border-white/10">
               <Sparkles className="w-3 h-3 text-brand-rust" />
-              <span className="text-[10px] uppercase tracking-[0.2em] font-black text-slate-300">AI Formation Guide</span>
+              <span className="text-[10px] uppercase tracking-[0.2em] font-black text-slate-300">AI Site Chat</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">Seek Direct Wisdom</h2>
             <p className="text-slate-400 text-lg leading-relaxed mb-8 max-w-lg">
-              Interact with our Formation Guide for immediate insights on leadership, spiritual maturity, and character building. Based on the philosophy of intentional growth.
+              Interact with our AI Site Chat for immediate insights on leadership, spiritual maturity, and character building. Based on the philosophy of intentional growth.
             </p>
             <div className="flex items-center space-x-6 text-slate-700">
               <div className="flex items-center space-x-2">
@@ -75,7 +75,7 @@ export const GeminiAdvisor: React.FC = () => {
                   <MessageSquare className="w-4 h-4 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-sm font-bold uppercase tracking-widest text-brand-navy">The Formation Guide</h3>
+                  <h3 className="text-sm font-bold uppercase tracking-widest text-brand-navy">AI Site Chat</h3>
                   <p className="text-[10px] text-brand-rust font-bold uppercase">Character Advisor</p>
                 </div>
               </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Sparkles } from 'lucide-react';
 import { PrimaryButton } from './Button';
 
 interface NavbarProps {
@@ -37,7 +37,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage = 'home', onSchedule
   const navLinks = [
     { name: 'Services', href: '#services' },
     { name: 'Philosophy', href: '#philosophy' },
-    { name: 'Formation Guide', href: '#advisor' },
+    { name: 'AI Site Chat', href: '#advisor', icon: true },
   ];
 
   return (
@@ -60,12 +60,14 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage = 'home', onSchedule
                 key={link.name}
                 type="button"
                 onClick={() => onNavigateToSection(link.href)}
-                className="text-xs font-bold text-slate-700 hover:text-brand-navy transition-colors uppercase tracking-widest"
+                className="text-xs font-bold text-slate-700 hover:text-brand-navy transition-colors uppercase tracking-widest flex items-center"
               >
+                {link.icon && <Sparkles className="w-3.5 h-3.5 mr-1.5 flex-shrink-0" />}
                 {link.name}
               </button>
             ) : (
-              <a key={link.name} href={link.href} className="text-xs font-bold text-slate-700 hover:text-brand-navy transition-colors uppercase tracking-widest">
+              <a key={link.name} href={link.href} className="text-xs font-bold text-slate-700 hover:text-brand-navy transition-colors uppercase tracking-widest flex items-center">
+                {link.icon && <Sparkles className="w-3.5 h-3.5 mr-1.5 flex-shrink-0" />}
                 {link.name}
               </a>
             )
@@ -97,8 +99,9 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage = 'home', onSchedule
                   key={link.name}
                   type="button"
                   onClick={() => goToSection(link.href)}
-                  className="text-2xl font-bold tracking-tighter text-left"
+                  className="text-2xl font-bold tracking-tighter text-left flex items-center"
                 >
+                  {link.icon && <Sparkles className="w-6 h-6 mr-2 flex-shrink-0" />}
                   {link.name}
                 </button>
               ) : (
@@ -106,8 +109,9 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage = 'home', onSchedule
                   key={link.name} 
                   href={link.href} 
                   onClick={() => setMobileMenuOpen(false)} 
-                  className="text-2xl font-bold tracking-tighter"
+                  className="text-2xl font-bold tracking-tighter flex items-center"
                 >
+                  {link.icon && <Sparkles className="w-6 h-6 mr-2 flex-shrink-0" />}
                   {link.name}
                 </a>
               )
