@@ -1,7 +1,11 @@
 
 import React from 'react';
 
-export const Hero: React.FC = () => {
+interface HeroProps {
+  onScheduleConsultation?: () => void;
+}
+
+export const Hero: React.FC<HeroProps> = ({ onScheduleConsultation }) => {
   return (
     <header className="relative pt-24 pb-24 overflow-hidden border-b border-slate-100">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
@@ -19,10 +23,17 @@ export const Hero: React.FC = () => {
             Experience the joy, peace, and purpose of a life set apart for God. I coach and lead men to embrace the path of sanctification, moving from a mindset of duty into a vibrant, personal relationship with Jesus Christ. From the sanctity of your family to the challenges of your work and your role in the community, we will align every area of your life with the heart of Jesus and obedience to biblical truth.
           </p>
           <div className="flex flex-col sm:flex-row gap-6">
-            <a href="#services" className="bg-brand-navy text-white px-10 py-5 font-bold uppercase tracking-[0.15em] text-xs flex items-center justify-center hover:bg-slate-800 transition-all group shadow-xl shadow-slate-200 relative overflow-hidden">
-              <span className="absolute top-0 left-0 w-full h-[2px] bg-brand-rust opacity-50"></span>
-              Schedule Consultation
-            </a>
+            {onScheduleConsultation ? (
+              <button type="button" onClick={onScheduleConsultation} className="bg-brand-navy text-white px-10 py-5 font-bold uppercase tracking-[0.15em] text-xs flex items-center justify-center hover:bg-slate-800 transition-all group shadow-xl shadow-slate-200 relative overflow-hidden">
+                <span className="absolute top-0 left-0 w-full h-[2px] bg-brand-rust opacity-50"></span>
+                Schedule Consultation
+              </button>
+            ) : (
+              <a href="#services" className="bg-brand-navy text-white px-10 py-5 font-bold uppercase tracking-[0.15em] text-xs flex items-center justify-center hover:bg-slate-800 transition-all group shadow-xl shadow-slate-200 relative overflow-hidden">
+                <span className="absolute top-0 left-0 w-full h-[2px] bg-brand-rust opacity-50"></span>
+                Schedule Consultation
+              </a>
+            )}
             <a href="#philosophy" className="border border-slate-200 bg-white px-10 py-5 font-bold uppercase tracking-[0.15em] text-xs hover:bg-slate-50 transition-all text-slate-600 flex items-center justify-center">
               Scholarship Info
             </a>
