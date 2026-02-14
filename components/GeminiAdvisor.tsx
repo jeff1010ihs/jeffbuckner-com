@@ -4,6 +4,22 @@ import { Send, Sparkles, Loader2, MessageSquare } from 'lucide-react';
 import { getLeadershipInsight } from '../services/geminiService';
 import { ChatMessage } from '../types';
 
+async function fetchInsight(prompt: string): Promise<string> {
+  if (import.meta.env.DEV) {
+    return getLeadershipInsight(prompt);
+  }
+  const res = await fetch('/api/insight', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ prompt }),
+  });
+  const data = await res.json();
+  if (!res.ok) {
+    return data.message ?? data.error ?? "The wisdom of the moment is currently unavailable. Please try again.";
+  }
+  return data.text ?? "I'm sorry, I couldn't generate an insight at this moment. Please try again.";
+}
+
 export const GeminiAdvisor: React.FC = () => {
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
@@ -35,7 +51,7 @@ export const GeminiAdvisor: React.FC = () => {
     setInput('');
     setIsLoading(true);
 
-    const aiResponse = await getLeadershipInsight(input);
+    const aiResponse = await fetchInsight(input);
     
     const modelMessage: ChatMessage = {
       role: 'model',
