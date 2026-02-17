@@ -7,6 +7,7 @@ export interface Service {
   tagline: string;
   icon: ReactNode;
   description: string;
+  suitableFor: string;
   scripture: string;
   reference: string;
 }
