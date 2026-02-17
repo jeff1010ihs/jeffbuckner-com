@@ -56,7 +56,7 @@ export const ServicesGrid: React.FC<ServicesGridProps> = ({ onScheduleConsultati
                 </p>
               </div>
               <a href="#" className="text-[10px] font-bold uppercase tracking-[0.2em] mt-4 inline-block text-[#16243E] underline decoration-slate-300 hover:text-[#7C2D12] hover:decoration-[#7C2D12] transition-colors">
-                MORE INFORMATION AND PRICING
+                MORE INFORMATION AND NEXT STEPS
               </a>
             </div>
           ))}
