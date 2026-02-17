@@ -46,7 +46,7 @@ export const SERVICES: Service[] = [
     title: "Workshops & Retreats",
     tagline: "Thoughtfully planned gatherings for critical transitions.",
     icon: <Compass className="w-6 h-6" />,
-    description: "Designing and facilitating events that challenge and strengthen men. From one-day workshops to multi-day retreats, we combine professional execution with meaningful, transformative content. Each gathering is tailored to your group's size, stage, and goals—whether for critical transitions or ongoing formation.",
+    description: "Designing, managing, and facilitating events that challenge and strengthen men. From one-day workshops to multi-day retreats, I leverage my Project Management Professional (PMP) certification with thirty years' experience leading complex initiatives to combine professional execution with meaningful, transformative content. Each gathering is tailored to your group's size, stage, and goals—whether for critical transitions or ongoing formation.",
     suitableFor: "churches, ministries, and organizations planning men's events",
     scripture: "But all things should be done decently and in order.",
     reference: "1 Corinthians 14:40 (ESV)"
@@ -56,7 +56,7 @@ export const SERVICES: Service[] = [
     title: "Public Speaking",
     tagline: "Direct truth calling men to responsibility.",
     icon: <Mic2 className="w-6 h-6" />,
-    description: "Direct and motivational teaching that emphasizes truth and personal accountability. I avoid hype or emotional manipulation in favor of clear, biblical conviction. Content is tailored to your event—keynotes, men's gatherings, conferences, or church services—always calling men to responsibility and faithful leadership.",
+    description: "Motivational and educational speaking engagements that emphasize truth, personal accountability, and values-based leadership. I avoid hype or emotional manipulation in favor of clear, biblical conviction. Content is tailored to your event—keynotes, men's gatherings, retreats, church services, and corporate gatherings—always calling men to personal responsibility and servant leadership.",
     suitableFor: "men's events, conferences, churches, and organizations",
     scripture: "Let your speech always be gracious, seasoned with salt, so that you may know how you ought to answer each person.",
     reference: "Colossians 4:6 (ESV)"
@@ -66,7 +66,7 @@ export const SERVICES: Service[] = [
     title: "Corporate Chaplaincy",
     tagline: "Support and ethical clarity for organizations.",
     icon: <HeartHandshake className="w-6 h-6" />,
-    description: "Confidential pastoral care for teams within secular organizations. I provide support and moral clarity during seasons of stress, transition, or ethical strain. The work is discreet, biblically grounded, and aimed at helping individuals and teams navigate difficult decisions while preserving dignity and trust.",
+    description: "Confidential pastoral care for men within non-faith-based business and publicly held companies. I provide support and moral clarity during seasons of stress, transition, or ethical strain. The work is discreet, biblically grounded, and aimed at helping individuals and teams navigate difficult decisions while preserving dignity and trust.",
     suitableFor: "businesses and organizations seeking pastoral support for teams",
     scripture: "Who comforts us in all our affliction, so that we may be able to comfort those who are in any affliction.",
     reference: "2 Corinthians 1:4 (ESV)"
