@@ -33,17 +33,19 @@ export const ServicesGrid: React.FC<ServicesGridProps> = ({ onScheduleConsultati
               <p className="text-[10px] font-bold text-brand-rust uppercase tracking-[0.2em] mb-5 italic font-serif">
                 {service.tagline}
               </p>
-              <p className="text-slate-700 leading-relaxed mb-5 text-sm font-light flex-grow">
-                {service.description}
-              </p>
-              <p className="text-slate-600 text-sm font-medium mb-5">
-                Suitable for {service.suitableFor}.
-                {service.id === 1 && (
-                  <> Zero-cost scholarships are available based on means testing.{' '}
-                    <a href="#" className="underline text-slate-600 hover:text-[#7C2D12] transition-colors">Learn more about donating or applying.</a>
-                  </>
-                )}
-              </p>
+              <div className="flex-grow">
+                <p className="text-slate-700 leading-relaxed mb-5 text-sm font-light">
+                  {service.description}
+                </p>
+                <p className="text-slate-600 text-sm font-medium mb-5">
+                  Suitable for {service.suitableFor}.
+                  {service.id === 1 && (
+                    <> Zero-cost scholarships are available based on means testing.{' '}
+                      <a href="#" className="underline text-slate-600 hover:text-[#7C2D12] transition-colors">Learn more about donating or applying.</a>
+                    </>
+                  )}
+                </p>
+              </div>
 
               <div className="mt-auto bg-slate-50 p-6 border-l-2 border-brand-navy/20 transition-colors">
                 <p className="text-xs text-slate-700 leading-normal mb-3 font-serif italic">
