@@ -16,7 +16,7 @@ export const SERVICES: Service[] = [
     title: "Christian Life Coaching for Men",
     tagline: "One-on-One and Group Coaching. Scholarships Available.",
     icon: <Users className="w-6 h-6" />,
-    description: "Experience the joy, peace, and purpose of living a biblically based Christ-centered life. It begins with grounding one in God's plan of salvation. Focus areas include daily disciplines and obedient living; identity in Christ and freedom from strongholds; spiritual maturity and theological grounding; and sharing the gospel and discipling men.",
+    description: "Experience the joy, peace, and purpose of living a biblically based Christ-centered life. For some, it begins with God's plan of salvation. Others choose to focus on daily disciplines and obedient living; identity in Christ and freedom from strongholds; spiritual maturity and theological grounding; or sharing the gospel and discipling men. I provide accountability in all areas.",
     suitableFor: "individual men and small groups seeking Christ-centered growth",
     scripture: "Him we proclaim, warning everyone and teaching everyone with all wisdom, that we may present everyone mature in Christ.",
     reference: "Colossians 1:28 (ESV)"
@@ -26,7 +26,7 @@ export const SERVICES: Service[] = [
     title: "Leadership Development",
     tagline: "Servant based leadership development for home, work, and church.",
     icon: <ShieldCheck className="w-6 h-6" />,
-    description: "Leadership formation rooted in character, humility, and conviction. Learn to exercise authority responsibly and live with integrity under pressure. We focus on servant leadership, decision-making under uncertainty, and building trust with those you lead—whether in your home, workplace, or church.",
+    description: "Leadership formation is rooted in values, humility, authenticity, and doing uncomfortable work. Learn to exercise authority responsibly and live with integrity under pressure. I focus on servant leadership, decision-making under uncertainty, and building trust with those you lead—whether in your home, workplace, or church.",
     suitableFor: "emerging and established leaders in the home, workplace, and church. We also offer values-based programs appropriate for businesses and publicly-held companies",
     scripture: "But whoever would be great among you must be your servant, and whoever would be first among you must be slave of all.",
     reference: "Mark 10:43–44 (ESV)"
