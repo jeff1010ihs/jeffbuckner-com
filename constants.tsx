@@ -13,10 +13,10 @@ import { Service } from './types';
 export const SERVICES: Service[] = [
   {
     id: 1,
-    title: "Coaching & Spiritual Formation",
-    tagline: "Disciplined inner lives and faithful obedience.",
+    title: "Christian Life Coaching for Men",
+    tagline: "One-on-One and Group Coaching. Scholarships Available",
     icon: <Users className="w-6 h-6" />,
-    description: "One-on-One and group coaching focused on spiritual growth, personal responsibility, and lasting transformation. Grounded in Scripture to help men develop clarity of identity and faithful obedience.",
+    description: "Experience the joy, peace, and purpose of living a biblically based Christ-centered life. It begins with grounding one in God's plan of salvation. Focus areas include daily disciplines and obedient living; identity in Christ and freedom from strongholds; spiritual maturity and theological grounding; and sharing the gospel and discipling men.",
     scripture: "Him we proclaim, warning everyone and teaching everyone with all wisdom, that we may present everyone mature in Christ.",
     reference: "Colossians 1:28 (ESV)"
   },

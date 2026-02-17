@@ -36,8 +36,14 @@ export const ServicesGrid: React.FC<ServicesGridProps> = ({ onScheduleConsultati
               <p className="text-slate-700 leading-relaxed mb-5 text-sm font-light flex-grow">
                 {service.description}
               </p>
+              {service.id === 1 && (
+                <p className="text-slate-700 leading-relaxed mb-5 text-sm font-light">
+                  Programs for individuals and groups. Zero-cost scholarships are available based on means testing.{' '}
+                  <a href="#" className="underline text-slate-700 hover:text-[#7C2D12] transition-colors">Learn more about donating or applying.</a>
+                </p>
+              )}
 
-              <div className="mt-auto bg-slate-50 p-6 border-l-2 border-brand-navy/20 group-hover:border-brand-rust transition-colors">
+              <div className="mt-auto bg-slate-50 p-6 border-l-2 border-brand-navy/20 transition-colors">
                 <p className="text-xs text-slate-700 leading-normal mb-3 font-serif italic">
                   "{service.scripture}"
                 </p>
@@ -45,6 +51,9 @@ export const ServicesGrid: React.FC<ServicesGridProps> = ({ onScheduleConsultati
                   — {service.reference}
                 </p>
               </div>
+              <a href="#" className="text-[10px] font-bold uppercase tracking-[0.2em] mt-4 inline-block text-[#16243E] underline decoration-slate-300 hover:text-[#7C2D12] hover:decoration-[#7C2D12] transition-colors">
+                MORE INFORMATION AND PRICING
+              </a>
             </div>
           ))}
 
