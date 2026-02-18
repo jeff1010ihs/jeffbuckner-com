@@ -38,7 +38,7 @@ export const ServicesGrid: React.FC<ServicesGridProps> = ({ onScheduleConsultati
                   {service.description}
                 </p>
                 <p className="text-slate-600 text-sm font-medium mb-5">
-                  Suitable for {service.suitableFor}.
+                  {service.suitableForLabel} {service.suitableFor}.
                   {service.id === 1 && (
                     <> Zero-cost scholarships are available based on means testing.{' '}
                       <a href="#" className="underline text-slate-600 hover:text-[#7C2D12] transition-colors">Learn more about donating or applying.</a>

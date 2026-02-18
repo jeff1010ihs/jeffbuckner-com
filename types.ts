@@ -7,6 +7,7 @@ export interface Service {
   tagline: string;
   icon: ReactNode;
   description: string;
+  suitableForLabel: string; // e.g. "Ideal for", "Best for", "Designed for"
   suitableFor: string;
   scripture: string;
   reference: string;
