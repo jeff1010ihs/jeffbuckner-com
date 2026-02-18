@@ -74,6 +74,18 @@ export const StyleGuide: React.FC = () => {
                 </div>
               </div>
             </div>
+            <div>
+              <span className="text-[9px] font-bold text-slate-300 uppercase tracking-widest mb-4 block">The Standard Paragraph</span>
+              <h4 className="text-slate-900 text-lg font-bold uppercase tracking-widest mb-6">The Standard Paragraph</h4>
+              <div className="space-y-4">
+                <p className="text-slate-700 text-sm leading-relaxed">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p className="text-slate-700 text-sm leading-relaxed">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
